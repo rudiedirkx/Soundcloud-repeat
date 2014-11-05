@@ -1,0 +1,19 @@
+{
+	"name": "Soundcloud repeat",
+	"description": "Repeat button for Soundcloud HTML5 audio",
+
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "soundcloud.js" ],
+		"css": [ "soundcloud.css" ],
+		"matches": [ "*://soundcloud.com/*" ],
+		"run_at": "document_start"
+	} ],
+
+	"icons": {
+		"128": "soundcloud128.png",
+		"48": "soundcloud48.png"
+	},
+	"version": "1.0",
+	"manifest_version": 2
+}
